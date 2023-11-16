@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
   render() {
@@ -14,9 +14,11 @@ class MyDocument extends Document {
           <link
             href="https://fonts.googleapis.com/css?family=Gabarito&display=optional"
             rel="stylesheet"
-            />
-          <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-            rel="stylesheet"></link>
+          />
+          <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+          ></link>
           <link
             href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap"
             rel="stylesheet"

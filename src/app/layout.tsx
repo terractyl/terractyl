@@ -14,6 +14,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  if (process.env.NEXTAUTH_URL)
+
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
