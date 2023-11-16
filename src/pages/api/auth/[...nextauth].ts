@@ -15,7 +15,7 @@ export default NextAuth({
     }),
   ],
   callbacks: {
-    async redirect({ url, baseUrl}) {
+    async redirect() {
       return `${process.env.NEXTAUTH_URL}/dashboard`
     }
   },
