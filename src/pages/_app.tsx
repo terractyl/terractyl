@@ -5,8 +5,6 @@ export default function App({ Component, pageProps: { session, ...pageProps} }: 
   // Getting the layouts if there are any, else just the page
   const getLayout = Component.getLayout ?? ((page) => page);
 
-  console.log(session)
-
   // Returning the layout and page
   return (
     <SessionProvider session={session}>

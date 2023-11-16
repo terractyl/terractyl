@@ -1,14 +1,18 @@
-import { NextResponse } from 'next/server'
-import type { NextRequest } from 'next/server'
+import { withAuth } from 'next-auth/middleware'
 
-// 
-import { useSession } from 'next-auth/react'
+/*export default withAuth(
+    async (req, res) => console.log("authenticated?"),
+    {
+        callbacks: {
+            authorized: ({ token }) => {
+                console.log(token)
+                return token ? true : false
+            }
+        },
+    },
+);*/
 
-/**
- * This Middleware function will automatically redirect the user to the login page if they are not logged in.
- * @param request 
- * @returns 
- */
-export function middleware(request: NextRequest) {
-    
-};
+// TODO: ADD get session token endpoint
+// TODO: CAuse we use database instead of just JWT tokens
+
+export const config = { matcher: ["/dashboard"] }; 

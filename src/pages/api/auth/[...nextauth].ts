@@ -14,5 +14,11 @@ export default NextAuth({
       clientSecret: process.env.DISCORD_CLIENT_SECRET!,
     }),
   ],
+  callbacks: {
+    async redirect({ url, baseUrl}) {
+      return `${process.env.NEXTAUTH_URL}/dashboard`
+    }
+  },
+
   adapter: PrismaAdapter(prisma)
 });
