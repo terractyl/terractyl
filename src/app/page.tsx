@@ -1,6 +1,10 @@
-export default function Home() {
-  return (
-    <div>
-    </div>
-  )
-}
+"use client";
+import { useEffect } from "react"
+
+export default function Home() {  
+  useEffect(() => {
+      window.location.href = `api/auth/login`
+    }, [])
+
+  return <div></div>
+};
