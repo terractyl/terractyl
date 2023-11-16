@@ -20,5 +20,6 @@ export default NextAuth({
     }
   },
 
+  // A database is optional, but required to persist accounts in a database
   adapter: PrismaAdapter(prisma)
 });

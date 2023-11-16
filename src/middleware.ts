@@ -15,4 +15,8 @@ import { withAuth } from 'next-auth/middleware'
 // TODO: ADD get session token endpoint
 // TODO: CAuse we use database instead of just JWT tokens
 
+export function middleware() {
+    
+}
+
 export const config = { matcher: ["/dashboard"] }; 
