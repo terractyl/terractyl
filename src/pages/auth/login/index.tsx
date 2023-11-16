@@ -7,8 +7,6 @@ export default function LoginPage() {
   // Getting the session
   const { data: session } = useSession();
 
-  console.log(session);
-
   // If the user is looged in redirect him to the dashboard
   if (session) return router.push("/dashboard");
 
