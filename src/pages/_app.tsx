@@ -1,6 +1,8 @@
 import { AppPropsWithLayout } from "@/utils/types/_app";
 import { SessionProvider } from "next-auth/react";
 
+import "../app/globals.css"
+
 export default function App({ Component, pageProps: { session, ...pageProps} }: AppPropsWithLayout<any>) {
   // Getting the layouts if there are any, else just the page
   const getLayout = Component.getLayout ?? ((page) => page);

@@ -3,7 +3,7 @@ import { useEffect } from "react"
 
 export default function Home() {  
   useEffect(() => {
-      window.location.href = `api/auth/login`
+      window.location.href = `auth/login`
     }, [])
 
   return <div></div>
