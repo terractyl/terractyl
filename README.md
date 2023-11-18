@@ -1,2 +1,2 @@
 # terractyl
-Terractyl is a panel replacement for the Pterodactyl panel 🦖
+Terractyl is a better panel for the Pterodactyl panel 🦖
